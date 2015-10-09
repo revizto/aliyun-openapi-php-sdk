@@ -21,163 +21,190 @@ namespace Aliyun\Slb\Request\V20140515;
 
 class CreateLoadBalancerProRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Slb", "2014-05-15", "CreateLoadBalancerPro");
-	}
+    public function __construct()
+    {
+        parent::__construct("Slb", "2014-05-15", "CreateLoadBalancerPro");
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $addressType;
+    private $addressType;
 
-	private  $internetChargeType;
+    private $internetChargeType;
 
-	private  $bandwidth;
+    private $bandwidth;
 
-	private  $clientToken;
+    private $clientToken;
 
-	private  $loadBalancerName;
+    private $loadBalancerName;
 
-	private  $loadBalancerMode;
+    private $loadBalancerMode;
 
-	private  $address;
+    private $address;
 
-	private  $vpcId;
+    private $vpcId;
 
-	private  $vSwitchId;
+    private $vSwitchId;
 
-	private  $suName;
+    private $suName;
 
-	private  $ownerAccount;
+    private $ownerAccount;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getAddressType() {
-		return $this->addressType;
-	}
+    public function getAddressType()
+    {
+        return $this->addressType;
+    }
 
-	public function setAddressType($addressType) {
-		$this->addressType = $addressType;
-		$this->queryParameters["AddressType"]=$addressType;
-	}
+    public function setAddressType($addressType)
+    {
+        $this->addressType = $addressType;
+        $this->queryParameters["AddressType"] = $addressType;
+    }
 
-	public function getInternetChargeType() {
-		return $this->internetChargeType;
-	}
+    public function getInternetChargeType()
+    {
+        return $this->internetChargeType;
+    }
 
-	public function setInternetChargeType($internetChargeType) {
-		$this->internetChargeType = $internetChargeType;
-		$this->queryParameters["InternetChargeType"]=$internetChargeType;
-	}
+    public function setInternetChargeType($internetChargeType)
+    {
+        $this->internetChargeType = $internetChargeType;
+        $this->queryParameters["InternetChargeType"] = $internetChargeType;
+    }
 
-	public function getBandwidth() {
-		return $this->bandwidth;
-	}
+    public function getBandwidth()
+    {
+        return $this->bandwidth;
+    }
 
-	public function setBandwidth($bandwidth) {
-		$this->bandwidth = $bandwidth;
-		$this->queryParameters["Bandwidth"]=$bandwidth;
-	}
+    public function setBandwidth($bandwidth)
+    {
+        $this->bandwidth = $bandwidth;
+        $this->queryParameters["Bandwidth"] = $bandwidth;
+    }
 
-	public function getClientToken() {
-		return $this->clientToken;
-	}
+    public function getClientToken()
+    {
+        return $this->clientToken;
+    }
 
-	public function setClientToken($clientToken) {
-		$this->clientToken = $clientToken;
-		$this->queryParameters["ClientToken"]=$clientToken;
-	}
+    public function setClientToken($clientToken)
+    {
+        $this->clientToken = $clientToken;
+        $this->queryParameters["ClientToken"] = $clientToken;
+    }
 
-	public function getLoadBalancerName() {
-		return $this->loadBalancerName;
-	}
+    public function getLoadBalancerName()
+    {
+        return $this->loadBalancerName;
+    }
 
-	public function setLoadBalancerName($loadBalancerName) {
-		$this->loadBalancerName = $loadBalancerName;
-		$this->queryParameters["LoadBalancerName"]=$loadBalancerName;
-	}
+    public function setLoadBalancerName($loadBalancerName)
+    {
+        $this->loadBalancerName = $loadBalancerName;
+        $this->queryParameters["LoadBalancerName"] = $loadBalancerName;
+    }
 
-	public function getLoadBalancerMode() {
-		return $this->loadBalancerMode;
-	}
+    public function getLoadBalancerMode()
+    {
+        return $this->loadBalancerMode;
+    }
 
-	public function setLoadBalancerMode($loadBalancerMode) {
-		$this->loadBalancerMode = $loadBalancerMode;
-		$this->queryParameters["LoadBalancerMode"]=$loadBalancerMode;
-	}
+    public function setLoadBalancerMode($loadBalancerMode)
+    {
+        $this->loadBalancerMode = $loadBalancerMode;
+        $this->queryParameters["LoadBalancerMode"] = $loadBalancerMode;
+    }
 
-	public function getAddress() {
-		return $this->address;
-	}
+    public function getAddress()
+    {
+        return $this->address;
+    }
 
-	public function setAddress($address) {
-		$this->address = $address;
-		$this->queryParameters["Address"]=$address;
-	}
+    public function setAddress($address)
+    {
+        $this->address = $address;
+        $this->queryParameters["Address"] = $address;
+    }
 
-	public function getVpcId() {
-		return $this->vpcId;
-	}
+    public function getVpcId()
+    {
+        return $this->vpcId;
+    }
 
-	public function setVpcId($vpcId) {
-		$this->vpcId = $vpcId;
-		$this->queryParameters["VpcId"]=$vpcId;
-	}
+    public function setVpcId($vpcId)
+    {
+        $this->vpcId = $vpcId;
+        $this->queryParameters["VpcId"] = $vpcId;
+    }
 
-	public function getVSwitchId() {
-		return $this->vSwitchId;
-	}
+    public function getVSwitchId()
+    {
+        return $this->vSwitchId;
+    }
 
-	public function setVSwitchId($vSwitchId) {
-		$this->vSwitchId = $vSwitchId;
-		$this->queryParameters["VSwitchId"]=$vSwitchId;
-	}
+    public function setVSwitchId($vSwitchId)
+    {
+        $this->vSwitchId = $vSwitchId;
+        $this->queryParameters["VSwitchId"] = $vSwitchId;
+    }
 
-	public function getSuName() {
-		return $this->suName;
-	}
+    public function getSuName()
+    {
+        return $this->suName;
+    }
 
-	public function setSuName($suName) {
-		$this->suName = $suName;
-		$this->queryParameters["SuName"]=$suName;
-	}
+    public function setSuName($suName)
+    {
+        $this->suName = $suName;
+        $this->queryParameters["SuName"] = $suName;
+    }
 
-	public function getOwnerAccount() {
-		return $this->ownerAccount;
-	}
+    public function getOwnerAccount()
+    {
+        return $this->ownerAccount;
+    }
 
-	public function setOwnerAccount($ownerAccount) {
-		$this->ownerAccount = $ownerAccount;
-		$this->queryParameters["OwnerAccount"]=$ownerAccount;
-	}
-	
+    public function setOwnerAccount($ownerAccount)
+    {
+        $this->ownerAccount = $ownerAccount;
+        $this->queryParameters["OwnerAccount"] = $ownerAccount;
+    }
 }

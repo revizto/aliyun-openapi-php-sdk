@@ -23,15 +23,15 @@ use \Sts\Request\V20150401 as Sts;
 $iClientProfile = DefaultProfile::getProfile("cn-hangzhou", "<your accessKey>", "<your accessSecret>");
 $client = new DefaultAcsClient($iClientProfile);
 
-$policy = "{\n" .
-                "    \"Version\": \"1\",\n" .
-                "    \"Statement\": [\n" .
-                "      {\n" .
-                "        \"Effect\": \"Allow\",\n" .
-                "        \"Action\": \"odps:Create*\",\n" .
-                "        \"Resource\": \"acs:odps:hz:*:projects/*\"\n" .
-                "      }\n" .
-                "    ]\n" .
+$policy = "{\n".
+                "    \"Version\": \"1\",\n".
+                "    \"Statement\": [\n".
+                "      {\n".
+                "        \"Effect\": \"Allow\",\n".
+                "        \"Action\": \"odps:Create*\",\n".
+                "        \"Resource\": \"acs:odps:hz:*:projects/*\"\n".
+                "      }\n".
+                "    ]\n".
                 "  }";
 $request = new Sts\GetFederationTokenRequest();
 $request->setName("sts_test");

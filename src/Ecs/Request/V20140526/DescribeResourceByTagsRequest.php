@@ -21,185 +21,216 @@ namespace  Aliyun\Ecs\Request\V20140526;
 
 class DescribeResourceByTagsRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Ecs", "2014-05-26", "DescribeResourceByTags");
-	}
+    public function __construct()
+    {
+        parent::__construct("Ecs", "2014-05-26", "DescribeResourceByTags");
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $pageSize;
+    private $pageSize;
 
-	private  $nextToken;
+    private $nextToken;
 
-	private  $resourceType;
+    private $resourceType;
 
-	private  $tag1Key;
+    private $tag1Key;
 
-	private  $tag2Key;
+    private $tag2Key;
 
-	private  $tag3Key;
+    private $tag3Key;
 
-	private  $tag4Key;
+    private $tag4Key;
 
-	private  $tag5Key;
+    private $tag5Key;
 
-	private  $tag1Value;
+    private $tag1Value;
 
-	private  $tag2Value;
+    private $tag2Value;
 
-	private  $tag3Value;
+    private $tag3Value;
 
-	private  $tag4Value;
+    private $tag4Value;
 
-	private  $tag5Value;
+    private $tag5Value;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getPageSize() {
-		return $this->pageSize;
-	}
+    public function getPageSize()
+    {
+        return $this->pageSize;
+    }
 
-	public function setPageSize($pageSize) {
-		$this->pageSize = $pageSize;
-		$this->queryParameters["PageSize"]=$pageSize;
-	}
+    public function setPageSize($pageSize)
+    {
+        $this->pageSize = $pageSize;
+        $this->queryParameters["PageSize"] = $pageSize;
+    }
 
-	public function getNextToken() {
-		return $this->nextToken;
-	}
+    public function getNextToken()
+    {
+        return $this->nextToken;
+    }
 
-	public function setNextToken($nextToken) {
-		$this->nextToken = $nextToken;
-		$this->queryParameters["NextToken"]=$nextToken;
-	}
+    public function setNextToken($nextToken)
+    {
+        $this->nextToken = $nextToken;
+        $this->queryParameters["NextToken"] = $nextToken;
+    }
 
-	public function getResourceType() {
-		return $this->resourceType;
-	}
+    public function getResourceType()
+    {
+        return $this->resourceType;
+    }
 
-	public function setResourceType($resourceType) {
-		$this->resourceType = $resourceType;
-		$this->queryParameters["ResourceType"]=$resourceType;
-	}
+    public function setResourceType($resourceType)
+    {
+        $this->resourceType = $resourceType;
+        $this->queryParameters["ResourceType"] = $resourceType;
+    }
 
-	public function getTag1Key() {
-		return $this->tag1Key;
-	}
+    public function getTag1Key()
+    {
+        return $this->tag1Key;
+    }
 
-	public function setTag1Key($tag1Key) {
-		$this->tag1Key = $tag1Key;
-		$this->queryParameters["Tag1Key"]=$tag1Key;
-	}
+    public function setTag1Key($tag1Key)
+    {
+        $this->tag1Key = $tag1Key;
+        $this->queryParameters["Tag1Key"] = $tag1Key;
+    }
 
-	public function getTag2Key() {
-		return $this->tag2Key;
-	}
+    public function getTag2Key()
+    {
+        return $this->tag2Key;
+    }
 
-	public function setTag2Key($tag2Key) {
-		$this->tag2Key = $tag2Key;
-		$this->queryParameters["Tag2Key"]=$tag2Key;
-	}
+    public function setTag2Key($tag2Key)
+    {
+        $this->tag2Key = $tag2Key;
+        $this->queryParameters["Tag2Key"] = $tag2Key;
+    }
 
-	public function getTag3Key() {
-		return $this->tag3Key;
-	}
+    public function getTag3Key()
+    {
+        return $this->tag3Key;
+    }
 
-	public function setTag3Key($tag3Key) {
-		$this->tag3Key = $tag3Key;
-		$this->queryParameters["Tag3Key"]=$tag3Key;
-	}
+    public function setTag3Key($tag3Key)
+    {
+        $this->tag3Key = $tag3Key;
+        $this->queryParameters["Tag3Key"] = $tag3Key;
+    }
 
-	public function getTag4Key() {
-		return $this->tag4Key;
-	}
+    public function getTag4Key()
+    {
+        return $this->tag4Key;
+    }
 
-	public function setTag4Key($tag4Key) {
-		$this->tag4Key = $tag4Key;
-		$this->queryParameters["Tag4Key"]=$tag4Key;
-	}
+    public function setTag4Key($tag4Key)
+    {
+        $this->tag4Key = $tag4Key;
+        $this->queryParameters["Tag4Key"] = $tag4Key;
+    }
 
-	public function getTag5Key() {
-		return $this->tag5Key;
-	}
+    public function getTag5Key()
+    {
+        return $this->tag5Key;
+    }
 
-	public function setTag5Key($tag5Key) {
-		$this->tag5Key = $tag5Key;
-		$this->queryParameters["Tag5Key"]=$tag5Key;
-	}
+    public function setTag5Key($tag5Key)
+    {
+        $this->tag5Key = $tag5Key;
+        $this->queryParameters["Tag5Key"] = $tag5Key;
+    }
 
-	public function getTag1Value() {
-		return $this->tag1Value;
-	}
+    public function getTag1Value()
+    {
+        return $this->tag1Value;
+    }
 
-	public function setTag1Value($tag1Value) {
-		$this->tag1Value = $tag1Value;
-		$this->queryParameters["Tag1Value"]=$tag1Value;
-	}
+    public function setTag1Value($tag1Value)
+    {
+        $this->tag1Value = $tag1Value;
+        $this->queryParameters["Tag1Value"] = $tag1Value;
+    }
 
-	public function getTag2Value() {
-		return $this->tag2Value;
-	}
+    public function getTag2Value()
+    {
+        return $this->tag2Value;
+    }
 
-	public function setTag2Value($tag2Value) {
-		$this->tag2Value = $tag2Value;
-		$this->queryParameters["Tag2Value"]=$tag2Value;
-	}
+    public function setTag2Value($tag2Value)
+    {
+        $this->tag2Value = $tag2Value;
+        $this->queryParameters["Tag2Value"] = $tag2Value;
+    }
 
-	public function getTag3Value() {
-		return $this->tag3Value;
-	}
+    public function getTag3Value()
+    {
+        return $this->tag3Value;
+    }
 
-	public function setTag3Value($tag3Value) {
-		$this->tag3Value = $tag3Value;
-		$this->queryParameters["Tag3Value"]=$tag3Value;
-	}
+    public function setTag3Value($tag3Value)
+    {
+        $this->tag3Value = $tag3Value;
+        $this->queryParameters["Tag3Value"] = $tag3Value;
+    }
 
-	public function getTag4Value() {
-		return $this->tag4Value;
-	}
+    public function getTag4Value()
+    {
+        return $this->tag4Value;
+    }
 
-	public function setTag4Value($tag4Value) {
-		$this->tag4Value = $tag4Value;
-		$this->queryParameters["Tag4Value"]=$tag4Value;
-	}
+    public function setTag4Value($tag4Value)
+    {
+        $this->tag4Value = $tag4Value;
+        $this->queryParameters["Tag4Value"] = $tag4Value;
+    }
 
-	public function getTag5Value() {
-		return $this->tag5Value;
-	}
+    public function getTag5Value()
+    {
+        return $this->tag5Value;
+    }
 
-	public function setTag5Value($tag5Value) {
-		$this->tag5Value = $tag5Value;
-		$this->queryParameters["Tag5Value"]=$tag5Value;
-	}
-	
+    public function setTag5Value($tag5Value)
+    {
+        $this->tag5Value = $tag5Value;
+        $this->queryParameters["Tag5Value"] = $tag5Value;
+    }
 }

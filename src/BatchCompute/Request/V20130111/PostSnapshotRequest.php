@@ -21,11 +21,10 @@ namespace BatchCompute\Request\V20130111;
 
 class PostSnapshotRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "PostSnapshot");
-		$this->setUriPattern("/snapshots");
-		$this->setMethod("POST");
-	}
-	
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "PostSnapshot");
+        $this->setUriPattern("/snapshots");
+        $this->setMethod("POST");
+    }
 }

@@ -21,22 +21,23 @@ namespace BatchCompute\Request\V20130111;
 
 class GetTasksRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "GetTasks");
-		$this->setUriPattern("/jobs/[ResourceName]/tasks");
-		$this->setMethod("GET");
-	}
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "GetTasks");
+        $this->setUriPattern("/jobs/[ResourceName]/tasks");
+        $this->setMethod("GET");
+    }
 
-	private  $resourceName;
+    private $resourceName;
 
-	public function getResourceName() {
-		return $this->resourceName;
-	}
+    public function getResourceName()
+    {
+        return $this->resourceName;
+    }
 
-	public function setResourceName($resourceName) {
-		$this->resourceName = $resourceName;
-		$this->pathParameters["ResourceName"]=$resourceName;
-	}
-	
+    public function setResourceName($resourceName)
+    {
+        $this->resourceName = $resourceName;
+        $this->pathParameters["ResourceName"] = $resourceName;
+    }
 }

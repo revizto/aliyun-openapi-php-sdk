@@ -22,10 +22,9 @@ namespace Aliyun\Core\Exception;
 class ServerException extends ClientException
 {
 
-	function  __construct($errorMessage, $errorCode)
-	{
-		parent::__construct($errorMessage, $errorCode);
-		$this->setErrorType("Server");
-	}
-
+    public function __construct($errorMessage, $errorCode)
+    {
+        parent::__construct($errorMessage, $errorCode);
+        $this->setErrorType("Server");
+    }
 }

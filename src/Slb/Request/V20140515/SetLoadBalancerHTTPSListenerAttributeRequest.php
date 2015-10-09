@@ -21,262 +21,307 @@ namespace Aliyun\Slb\Request\V20140515;
 
 class SetLoadBalancerHTTPSListenerAttributeRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Slb", "2014-05-15", "SetLoadBalancerHTTPSListenerAttribute");
-	}
+    public function __construct()
+    {
+        parent::__construct("Slb", "2014-05-15", "SetLoadBalancerHTTPSListenerAttribute");
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $loadBalancerId;
+    private $loadBalancerId;
 
-	private  $listenerPort;
+    private $listenerPort;
 
-	private  $bandwidth;
+    private $bandwidth;
 
-	private  $xForwardedFor;
+    private $xForwardedFor;
 
-	private  $scheduler;
+    private $scheduler;
 
-	private  $stickySession;
+    private $stickySession;
 
-	private  $stickySessionType;
+    private $stickySessionType;
 
-	private  $cookieTimeout;
+    private $cookieTimeout;
 
-	private  $cookie;
+    private $cookie;
 
-	private  $healthCheck;
+    private $healthCheck;
 
-	private  $healthCheckDomain;
+    private $healthCheckDomain;
 
-	private  $healthCheckURI;
+    private $healthCheckURI;
 
-	private  $healthyThreshold;
+    private $healthyThreshold;
 
-	private  $unhealthyThreshold;
+    private $unhealthyThreshold;
 
-	private  $healthCheckTimeout;
+    private $healthCheckTimeout;
 
-	private  $healthCheckInterval;
+    private $healthCheckInterval;
 
-	private  $healthCheckConnectPort;
+    private $healthCheckConnectPort;
 
-	private  $healthCheckHttpCode;
+    private $healthCheckHttpCode;
 
-	private  $serverCertificateId;
+    private $serverCertificateId;
 
-	private  $ownerAccount;
+    private $ownerAccount;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getLoadBalancerId() {
-		return $this->loadBalancerId;
-	}
+    public function getLoadBalancerId()
+    {
+        return $this->loadBalancerId;
+    }
 
-	public function setLoadBalancerId($loadBalancerId) {
-		$this->loadBalancerId = $loadBalancerId;
-		$this->queryParameters["LoadBalancerId"]=$loadBalancerId;
-	}
+    public function setLoadBalancerId($loadBalancerId)
+    {
+        $this->loadBalancerId = $loadBalancerId;
+        $this->queryParameters["LoadBalancerId"] = $loadBalancerId;
+    }
 
-	public function getListenerPort() {
-		return $this->listenerPort;
-	}
+    public function getListenerPort()
+    {
+        return $this->listenerPort;
+    }
 
-	public function setListenerPort($listenerPort) {
-		$this->listenerPort = $listenerPort;
-		$this->queryParameters["ListenerPort"]=$listenerPort;
-	}
-
-	public function getBandwidth() {
-		return $this->bandwidth;
-	}
-
-	public function setBandwidth($bandwidth) {
-		$this->bandwidth = $bandwidth;
-		$this->queryParameters["Bandwidth"]=$bandwidth;
-	}
-
-	public function getXForwardedFor() {
-		return $this->xForwardedFor;
-	}
-
-	public function setXForwardedFor($xForwardedFor) {
-		$this->xForwardedFor = $xForwardedFor;
-		$this->queryParameters["XForwardedFor"]=$xForwardedFor;
-	}
-
-	public function getScheduler() {
-		return $this->scheduler;
-	}
-
-	public function setScheduler($scheduler) {
-		$this->scheduler = $scheduler;
-		$this->queryParameters["Scheduler"]=$scheduler;
-	}
-
-	public function getStickySession() {
-		return $this->stickySession;
-	}
-
-	public function setStickySession($stickySession) {
-		$this->stickySession = $stickySession;
-		$this->queryParameters["StickySession"]=$stickySession;
-	}
-
-	public function getStickySessionType() {
-		return $this->stickySessionType;
-	}
-
-	public function setStickySessionType($stickySessionType) {
-		$this->stickySessionType = $stickySessionType;
-		$this->queryParameters["StickySessionType"]=$stickySessionType;
-	}
-
-	public function getCookieTimeout() {
-		return $this->cookieTimeout;
-	}
-
-	public function setCookieTimeout($cookieTimeout) {
-		$this->cookieTimeout = $cookieTimeout;
-		$this->queryParameters["CookieTimeout"]=$cookieTimeout;
-	}
-
-	public function getCookie() {
-		return $this->cookie;
-	}
-
-	public function setCookie($cookie) {
-		$this->cookie = $cookie;
-		$this->queryParameters["Cookie"]=$cookie;
-	}
-
-	public function getHealthCheck() {
-		return $this->healthCheck;
-	}
-
-	public function setHealthCheck($healthCheck) {
-		$this->healthCheck = $healthCheck;
-		$this->queryParameters["HealthCheck"]=$healthCheck;
-	}
-
-	public function getHealthCheckDomain() {
-		return $this->healthCheckDomain;
-	}
-
-	public function setHealthCheckDomain($healthCheckDomain) {
-		$this->healthCheckDomain = $healthCheckDomain;
-		$this->queryParameters["HealthCheckDomain"]=$healthCheckDomain;
-	}
-
-	public function getHealthCheckURI() {
-		return $this->healthCheckURI;
-	}
-
-	public function setHealthCheckURI($healthCheckURI) {
-		$this->healthCheckURI = $healthCheckURI;
-		$this->queryParameters["HealthCheckURI"]=$healthCheckURI;
-	}
-
-	public function getHealthyThreshold() {
-		return $this->healthyThreshold;
-	}
-
-	public function setHealthyThreshold($healthyThreshold) {
-		$this->healthyThreshold = $healthyThreshold;
-		$this->queryParameters["HealthyThreshold"]=$healthyThreshold;
-	}
-
-	public function getUnhealthyThreshold() {
-		return $this->unhealthyThreshold;
-	}
-
-	public function setUnhealthyThreshold($unhealthyThreshold) {
-		$this->unhealthyThreshold = $unhealthyThreshold;
-		$this->queryParameters["UnhealthyThreshold"]=$unhealthyThreshold;
-	}
-
-	public function getHealthCheckTimeout() {
-		return $this->healthCheckTimeout;
-	}
-
-	public function setHealthCheckTimeout($healthCheckTimeout) {
-		$this->healthCheckTimeout = $healthCheckTimeout;
-		$this->queryParameters["HealthCheckTimeout"]=$healthCheckTimeout;
-	}
-
-	public function getHealthCheckInterval() {
-		return $this->healthCheckInterval;
-	}
-
-	public function setHealthCheckInterval($healthCheckInterval) {
-		$this->healthCheckInterval = $healthCheckInterval;
-		$this->queryParameters["HealthCheckInterval"]=$healthCheckInterval;
-	}
-
-	public function getHealthCheckConnectPort() {
-		return $this->healthCheckConnectPort;
-	}
-
-	public function setHealthCheckConnectPort($healthCheckConnectPort) {
-		$this->healthCheckConnectPort = $healthCheckConnectPort;
-		$this->queryParameters["HealthCheckConnectPort"]=$healthCheckConnectPort;
-	}
-
-	public function getHealthCheckHttpCode() {
-		return $this->healthCheckHttpCode;
-	}
-
-	public function setHealthCheckHttpCode($healthCheckHttpCode) {
-		$this->healthCheckHttpCode = $healthCheckHttpCode;
-		$this->queryParameters["HealthCheckHttpCode"]=$healthCheckHttpCode;
-	}
-
-	public function getServerCertificateId() {
-		return $this->serverCertificateId;
-	}
-
-	public function setServerCertificateId($serverCertificateId) {
-		$this->serverCertificateId = $serverCertificateId;
-		$this->queryParameters["ServerCertificateId"]=$serverCertificateId;
-	}
-
-	public function getOwnerAccount() {
-		return $this->ownerAccount;
-	}
-
-	public function setOwnerAccount($ownerAccount) {
-		$this->ownerAccount = $ownerAccount;
-		$this->queryParameters["OwnerAccount"]=$ownerAccount;
-	}
-	
+    public function setListenerPort($listenerPort)
+    {
+        $this->listenerPort = $listenerPort;
+        $this->queryParameters["ListenerPort"] = $listenerPort;
+    }
+
+    public function getBandwidth()
+    {
+        return $this->bandwidth;
+    }
+
+    public function setBandwidth($bandwidth)
+    {
+        $this->bandwidth = $bandwidth;
+        $this->queryParameters["Bandwidth"] = $bandwidth;
+    }
+
+    public function getXForwardedFor()
+    {
+        return $this->xForwardedFor;
+    }
+
+    public function setXForwardedFor($xForwardedFor)
+    {
+        $this->xForwardedFor = $xForwardedFor;
+        $this->queryParameters["XForwardedFor"] = $xForwardedFor;
+    }
+
+    public function getScheduler()
+    {
+        return $this->scheduler;
+    }
+
+    public function setScheduler($scheduler)
+    {
+        $this->scheduler = $scheduler;
+        $this->queryParameters["Scheduler"] = $scheduler;
+    }
+
+    public function getStickySession()
+    {
+        return $this->stickySession;
+    }
+
+    public function setStickySession($stickySession)
+    {
+        $this->stickySession = $stickySession;
+        $this->queryParameters["StickySession"] = $stickySession;
+    }
+
+    public function getStickySessionType()
+    {
+        return $this->stickySessionType;
+    }
+
+    public function setStickySessionType($stickySessionType)
+    {
+        $this->stickySessionType = $stickySessionType;
+        $this->queryParameters["StickySessionType"] = $stickySessionType;
+    }
+
+    public function getCookieTimeout()
+    {
+        return $this->cookieTimeout;
+    }
+
+    public function setCookieTimeout($cookieTimeout)
+    {
+        $this->cookieTimeout = $cookieTimeout;
+        $this->queryParameters["CookieTimeout"] = $cookieTimeout;
+    }
+
+    public function getCookie()
+    {
+        return $this->cookie;
+    }
+
+    public function setCookie($cookie)
+    {
+        $this->cookie = $cookie;
+        $this->queryParameters["Cookie"] = $cookie;
+    }
+
+    public function getHealthCheck()
+    {
+        return $this->healthCheck;
+    }
+
+    public function setHealthCheck($healthCheck)
+    {
+        $this->healthCheck = $healthCheck;
+        $this->queryParameters["HealthCheck"] = $healthCheck;
+    }
+
+    public function getHealthCheckDomain()
+    {
+        return $this->healthCheckDomain;
+    }
+
+    public function setHealthCheckDomain($healthCheckDomain)
+    {
+        $this->healthCheckDomain = $healthCheckDomain;
+        $this->queryParameters["HealthCheckDomain"] = $healthCheckDomain;
+    }
+
+    public function getHealthCheckURI()
+    {
+        return $this->healthCheckURI;
+    }
+
+    public function setHealthCheckURI($healthCheckURI)
+    {
+        $this->healthCheckURI = $healthCheckURI;
+        $this->queryParameters["HealthCheckURI"] = $healthCheckURI;
+    }
+
+    public function getHealthyThreshold()
+    {
+        return $this->healthyThreshold;
+    }
+
+    public function setHealthyThreshold($healthyThreshold)
+    {
+        $this->healthyThreshold = $healthyThreshold;
+        $this->queryParameters["HealthyThreshold"] = $healthyThreshold;
+    }
+
+    public function getUnhealthyThreshold()
+    {
+        return $this->unhealthyThreshold;
+    }
+
+    public function setUnhealthyThreshold($unhealthyThreshold)
+    {
+        $this->unhealthyThreshold = $unhealthyThreshold;
+        $this->queryParameters["UnhealthyThreshold"] = $unhealthyThreshold;
+    }
+
+    public function getHealthCheckTimeout()
+    {
+        return $this->healthCheckTimeout;
+    }
+
+    public function setHealthCheckTimeout($healthCheckTimeout)
+    {
+        $this->healthCheckTimeout = $healthCheckTimeout;
+        $this->queryParameters["HealthCheckTimeout"] = $healthCheckTimeout;
+    }
+
+    public function getHealthCheckInterval()
+    {
+        return $this->healthCheckInterval;
+    }
+
+    public function setHealthCheckInterval($healthCheckInterval)
+    {
+        $this->healthCheckInterval = $healthCheckInterval;
+        $this->queryParameters["HealthCheckInterval"] = $healthCheckInterval;
+    }
+
+    public function getHealthCheckConnectPort()
+    {
+        return $this->healthCheckConnectPort;
+    }
+
+    public function setHealthCheckConnectPort($healthCheckConnectPort)
+    {
+        $this->healthCheckConnectPort = $healthCheckConnectPort;
+        $this->queryParameters["HealthCheckConnectPort"] = $healthCheckConnectPort;
+    }
+
+    public function getHealthCheckHttpCode()
+    {
+        return $this->healthCheckHttpCode;
+    }
+
+    public function setHealthCheckHttpCode($healthCheckHttpCode)
+    {
+        $this->healthCheckHttpCode = $healthCheckHttpCode;
+        $this->queryParameters["HealthCheckHttpCode"] = $healthCheckHttpCode;
+    }
+
+    public function getServerCertificateId()
+    {
+        return $this->serverCertificateId;
+    }
+
+    public function setServerCertificateId($serverCertificateId)
+    {
+        $this->serverCertificateId = $serverCertificateId;
+        $this->queryParameters["ServerCertificateId"] = $serverCertificateId;
+    }
+
+    public function getOwnerAccount()
+    {
+        return $this->ownerAccount;
+    }
+
+    public function setOwnerAccount($ownerAccount)
+    {
+        $this->ownerAccount = $ownerAccount;
+        $this->queryParameters["OwnerAccount"] = $ownerAccount;
+    }
 }

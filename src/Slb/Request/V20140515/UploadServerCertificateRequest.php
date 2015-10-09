@@ -21,86 +21,99 @@ namespace Aliyun\Slb\Request\V20140515;
 
 class UploadServerCertificateRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Slb", "2014-05-15", "UploadServerCertificate");
-	}
+    public function __construct()
+    {
+        parent::__construct("Slb", "2014-05-15", "UploadServerCertificate");
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $serverCertificate;
+    private $serverCertificate;
 
-	private  $privateKey;
+    private $privateKey;
 
-	private  $serverCertificateName;
+    private $serverCertificateName;
 
-	private  $ownerAccount;
+    private $ownerAccount;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getServerCertificate() {
-		return $this->serverCertificate;
-	}
+    public function getServerCertificate()
+    {
+        return $this->serverCertificate;
+    }
 
-	public function setServerCertificate($serverCertificate) {
-		$this->serverCertificate = $serverCertificate;
-		$this->queryParameters["ServerCertificate"]=$serverCertificate;
-	}
+    public function setServerCertificate($serverCertificate)
+    {
+        $this->serverCertificate = $serverCertificate;
+        $this->queryParameters["ServerCertificate"] = $serverCertificate;
+    }
 
-	public function getPrivateKey() {
-		return $this->privateKey;
-	}
+    public function getPrivateKey()
+    {
+        return $this->privateKey;
+    }
 
-	public function setPrivateKey($privateKey) {
-		$this->privateKey = $privateKey;
-		$this->queryParameters["PrivateKey"]=$privateKey;
-	}
+    public function setPrivateKey($privateKey)
+    {
+        $this->privateKey = $privateKey;
+        $this->queryParameters["PrivateKey"] = $privateKey;
+    }
 
-	public function getServerCertificateName() {
-		return $this->serverCertificateName;
-	}
+    public function getServerCertificateName()
+    {
+        return $this->serverCertificateName;
+    }
 
-	public function setServerCertificateName($serverCertificateName) {
-		$this->serverCertificateName = $serverCertificateName;
-		$this->queryParameters["ServerCertificateName"]=$serverCertificateName;
-	}
+    public function setServerCertificateName($serverCertificateName)
+    {
+        $this->serverCertificateName = $serverCertificateName;
+        $this->queryParameters["ServerCertificateName"] = $serverCertificateName;
+    }
 
-	public function getOwnerAccount() {
-		return $this->ownerAccount;
-	}
+    public function getOwnerAccount()
+    {
+        return $this->ownerAccount;
+    }
 
-	public function setOwnerAccount($ownerAccount) {
-		$this->ownerAccount = $ownerAccount;
-		$this->queryParameters["OwnerAccount"]=$ownerAccount;
-	}
-	
+    public function setOwnerAccount($ownerAccount)
+    {
+        $this->ownerAccount = $ownerAccount;
+        $this->queryParameters["OwnerAccount"] = $ownerAccount;
+    }
 }

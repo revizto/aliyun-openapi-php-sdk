@@ -21,22 +21,23 @@ namespace BatchCompute\Request\V20130111;
 
 class ListJobsRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "ListJobs");
-		$this->setUriPattern("/jobs");
-		$this->setMethod("GET");
-	}
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "ListJobs");
+        $this->setUriPattern("/jobs");
+        $this->setMethod("GET");
+    }
 
-	private  $xAcsVersion;
+    private $xAcsVersion;
 
-	public function getXAcsVersion() {
-		return $this->xAcsVersion;
-	}
+    public function getXAcsVersion()
+    {
+        return $this->xAcsVersion;
+    }
 
-	public function setXAcsVersion($xAcsVersion) {
-		$this->xAcsVersion = $xAcsVersion;
-		$this->headers["x-acs-version"]=$xAcsVersion;
-	}
-	
+    public function setXAcsVersion($xAcsVersion)
+    {
+        $this->xAcsVersion = $xAcsVersion;
+        $this->headers["x-acs-version"] = $xAcsVersion;
+    }
 }

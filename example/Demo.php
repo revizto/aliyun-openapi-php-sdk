@@ -17,13 +17,16 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-include_once '../aliyun-php-sdk-core/Config.php';
-use Ecs\Request\V20140526 as Ecs;
+include_once '../vendor/autoload.php';
 
-$iClientProfile = DefaultProfile::getProfile("cn-hangzhou", "<your accessKey>", "<your accessSecret>");
+use Aliyun\Ecs\Request\V20140526 as Ecs;
+use Aliyun\Core\DefaultAcsClient;
+use Aliyun\Core\Profile\DefaultProfile;
+
+$iClientProfile = DefaultProfile::getProfile("cn-hangzhou", "k95V3MEIxHagxACY", "Uk1klNK1WmYS1F2xXrMMgYRgGTs9sT");
 $client = new DefaultAcsClient($iClientProfile);
 
-$request = new Ecs\DescribeRegionsRequest(); 
+$request = new Ecs\DescribeRegionsRequest();
 $request->setMethod("GET");
 $response = $client->getAcsResponse($request);
 print_r($response);

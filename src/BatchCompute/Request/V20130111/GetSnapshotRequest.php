@@ -21,22 +21,23 @@ namespace BatchCompute\Request\V20130111;
 
 class GetSnapshotRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "GetSnapshot");
-		$this->setUriPattern("/snapshots/[ResourceName]");
-		$this->setMethod("GET");
-	}
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "GetSnapshot");
+        $this->setUriPattern("/snapshots/[ResourceName]");
+        $this->setMethod("GET");
+    }
 
-	private  $resourceName;
+    private $resourceName;
 
-	public function getResourceName() {
-		return $this->resourceName;
-	}
+    public function getResourceName()
+    {
+        return $this->resourceName;
+    }
 
-	public function setResourceName($resourceName) {
-		$this->resourceName = $resourceName;
-		$this->pathParameters["ResourceName"]=$resourceName;
-	}
-	
+    public function setResourceName($resourceName)
+    {
+        $this->resourceName = $resourceName;
+        $this->pathParameters["ResourceName"] = $resourceName;
+    }
 }

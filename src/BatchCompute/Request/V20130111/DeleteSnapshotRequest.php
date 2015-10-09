@@ -21,22 +21,23 @@ namespace BatchCompute\Request\V20130111;
 
 class DeleteSnapshotRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "DeleteSnapshot");
-		$this->setUriPattern("/snapshots/[ResourceName]");
-		$this->setMethod("DELETE");
-	}
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "DeleteSnapshot");
+        $this->setUriPattern("/snapshots/[ResourceName]");
+        $this->setMethod("DELETE");
+    }
 
-	private  $resourceName;
+    private $resourceName;
 
-	public function getResourceName() {
-		return $this->resourceName;
-	}
+    public function getResourceName()
+    {
+        return $this->resourceName;
+    }
 
-	public function setResourceName($resourceName) {
-		$this->resourceName = $resourceName;
-		$this->pathParameters["ResourceName"]=$resourceName;
-	}
-	
+    public function setResourceName($resourceName)
+    {
+        $this->resourceName = $resourceName;
+        $this->pathParameters["ResourceName"] = $resourceName;
+    }
 }

@@ -21,42 +21,47 @@ namespace Aliyun\UbsmsInner\Request\V20150623;
 
 class NotifyUserBusinessCommandRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Ubsms-inner", "2015-06-23", "NotifyUserBusinessCommand");
-	}
+    public function __construct()
+    {
+        parent::__construct("Ubsms-inner", "2015-06-23", "NotifyUserBusinessCommand");
+    }
 
-	private  $uid;
+    private $uid;
 
-	private  $serviceCode;
+    private $serviceCode;
 
-	private  $cmd;
+    private $cmd;
 
-	public function getUid() {
-		return $this->uid;
-	}
+    public function getUid()
+    {
+        return $this->uid;
+    }
 
-	public function setUid($uid) {
-		$this->uid = $uid;
-		$this->queryParameters["Uid"]=$uid;
-	}
+    public function setUid($uid)
+    {
+        $this->uid = $uid;
+        $this->queryParameters["Uid"] = $uid;
+    }
 
-	public function getServiceCode() {
-		return $this->serviceCode;
-	}
+    public function getServiceCode()
+    {
+        return $this->serviceCode;
+    }
 
-	public function setServiceCode($serviceCode) {
-		$this->serviceCode = $serviceCode;
-		$this->queryParameters["ServiceCode"]=$serviceCode;
-	}
+    public function setServiceCode($serviceCode)
+    {
+        $this->serviceCode = $serviceCode;
+        $this->queryParameters["ServiceCode"] = $serviceCode;
+    }
 
-	public function getCmd() {
-		return $this->cmd;
-	}
+    public function getCmd()
+    {
+        return $this->cmd;
+    }
 
-	public function setCmd($cmd) {
-		$this->cmd = $cmd;
-		$this->queryParameters["Cmd"]=$cmd;
-	}
-	
+    public function setCmd($cmd)
+    {
+        $this->cmd = $cmd;
+        $this->queryParameters["Cmd"] = $cmd;
+    }
 }

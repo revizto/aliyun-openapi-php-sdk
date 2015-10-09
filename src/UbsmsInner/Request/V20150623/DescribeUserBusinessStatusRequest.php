@@ -21,42 +21,47 @@ namespace Aliyun\UbsmsInner\Request\V20150623;
 
 class DescribeUserBusinessStatusRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Ubsms-inner", "2015-06-23", "DescribeUserBusinessStatus");
-	}
+    public function __construct()
+    {
+        parent::__construct("Ubsms-inner", "2015-06-23", "DescribeUserBusinessStatus");
+    }
 
-	private  $callerBid;
+    private $callerBid;
 
-	private  $uid;
+    private $uid;
 
-	private  $serviceCode;
+    private $serviceCode;
 
-	public function getcallerBid() {
-		return $this->callerBid;
-	}
+    public function getcallerBid()
+    {
+        return $this->callerBid;
+    }
 
-	public function setcallerBid($callerBid) {
-		$this->callerBid = $callerBid;
-		$this->queryParameters["callerBid"]=$callerBid;
-	}
+    public function setcallerBid($callerBid)
+    {
+        $this->callerBid = $callerBid;
+        $this->queryParameters["callerBid"] = $callerBid;
+    }
 
-	public function getUid() {
-		return $this->uid;
-	}
+    public function getUid()
+    {
+        return $this->uid;
+    }
 
-	public function setUid($uid) {
-		$this->uid = $uid;
-		$this->queryParameters["Uid"]=$uid;
-	}
+    public function setUid($uid)
+    {
+        $this->uid = $uid;
+        $this->queryParameters["Uid"] = $uid;
+    }
 
-	public function getServiceCode() {
-		return $this->serviceCode;
-	}
+    public function getServiceCode()
+    {
+        return $this->serviceCode;
+    }
 
-	public function setServiceCode($serviceCode) {
-		$this->serviceCode = $serviceCode;
-		$this->queryParameters["ServiceCode"]=$serviceCode;
-	}
-	
+    public function setServiceCode($serviceCode)
+    {
+        $this->serviceCode = $serviceCode;
+        $this->queryParameters["ServiceCode"] = $serviceCode;
+    }
 }

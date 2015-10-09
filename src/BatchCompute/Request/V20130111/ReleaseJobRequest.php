@@ -21,33 +21,36 @@ namespace BatchCompute\Request\V20130111;
 
 class ReleaseJobRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "ReleaseJob");
-		$this->setUriPattern("/2013-01-11/jobs/[ResourceName]");
-		$this->setMethod("DELETE");
-	}
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "ReleaseJob");
+        $this->setUriPattern("/2013-01-11/jobs/[ResourceName]");
+        $this->setMethod("DELETE");
+    }
 
-	private  $accessId;
+    private $accessId;
 
-	private  $resourceName;
+    private $resourceName;
 
-	public function getAccessId() {
-		return $this->accessId;
-	}
+    public function getAccessId()
+    {
+        return $this->accessId;
+    }
 
-	public function setAccessId($accessId) {
-		$this->accessId = $accessId;
-		$this->queryParameters["AccessId"]=$accessId;
-	}
+    public function setAccessId($accessId)
+    {
+        $this->accessId = $accessId;
+        $this->queryParameters["AccessId"] = $accessId;
+    }
 
-	public function getResourceName() {
-		return $this->resourceName;
-	}
+    public function getResourceName()
+    {
+        return $this->resourceName;
+    }
 
-	public function setResourceName($resourceName) {
-		$this->resourceName = $resourceName;
-		$this->pathParameters["ResourceName"]=$resourceName;
-	}
-	
+    public function setResourceName($resourceName)
+    {
+        $this->resourceName = $resourceName;
+        $this->pathParameters["ResourceName"] = $resourceName;
+    }
 }

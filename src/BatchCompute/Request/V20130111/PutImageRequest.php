@@ -21,33 +21,36 @@ namespace BatchCompute\Request\V20130111;
 
 class PutImageRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "PutImage");
-		$this->setUriPattern("/images/[ResourceName]/[Property]");
-		$this->setMethod("PUT");
-	}
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "PutImage");
+        $this->setUriPattern("/images/[ResourceName]/[Property]");
+        $this->setMethod("PUT");
+    }
 
-	private  $resourceName;
+    private $resourceName;
 
-	private  $property;
+    private $property;
 
-	public function getResourceName() {
-		return $this->resourceName;
-	}
+    public function getResourceName()
+    {
+        return $this->resourceName;
+    }
 
-	public function setResourceName($resourceName) {
-		$this->resourceName = $resourceName;
-		$this->pathParameters["ResourceName"]=$resourceName;
-	}
+    public function setResourceName($resourceName)
+    {
+        $this->resourceName = $resourceName;
+        $this->pathParameters["ResourceName"] = $resourceName;
+    }
 
-	public function getProperty() {
-		return $this->property;
-	}
+    public function getProperty()
+    {
+        return $this->property;
+    }
 
-	public function setProperty($property) {
-		$this->property = $property;
-		$this->pathParameters["Property"]=$property;
-	}
-	
+    public function setProperty($property)
+    {
+        $this->property = $property;
+        $this->pathParameters["Property"] = $property;
+    }
 }

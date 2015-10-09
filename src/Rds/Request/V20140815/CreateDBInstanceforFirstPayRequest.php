@@ -21,152 +21,177 @@ namespace Aliyun\Rds\Request\V20140815;
 
 class CreateDBInstanceforFirstPayRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Rds", "2014-08-15", "CreateDBInstanceforFirstPay");
-	}
+    public function __construct()
+    {
+        parent::__construct("Rds", "2014-08-15", "CreateDBInstanceforFirstPay");
+    }
 
-	private  $uid;
+    private $uid;
 
-	private  $bid;
+    private $bid;
 
-	private  $uidLoginEmail;
+    private $uidLoginEmail;
 
-	private  $bidLoginEmail;
+    private $bidLoginEmail;
 
-	private  $engine;
+    private $engine;
 
-	private  $engineVersion;
+    private $engineVersion;
 
-	private  $dBInstanceClass;
+    private $dBInstanceClass;
 
-	private  $dBInstanceStorage;
+    private $dBInstanceStorage;
 
-	private  $dBInstanceNetType;
+    private $dBInstanceNetType;
 
-	private  $characterSetName;
+    private $characterSetName;
 
-	private  $dBInstanceRemarks;
+    private $dBInstanceRemarks;
 
-	private  $clientToken;
+    private $clientToken;
 
-	private  $ownerAccount;
+    private $ownerAccount;
 
-	public function getuid() {
-		return $this->uid;
-	}
+    public function getuid()
+    {
+        return $this->uid;
+    }
 
-	public function setuid($uid) {
-		$this->uid = $uid;
-		$this->queryParameters["uid"]=$uid;
-	}
+    public function setuid($uid)
+    {
+        $this->uid = $uid;
+        $this->queryParameters["uid"] = $uid;
+    }
 
-	public function getbid() {
-		return $this->bid;
-	}
+    public function getbid()
+    {
+        return $this->bid;
+    }
 
-	public function setbid($bid) {
-		$this->bid = $bid;
-		$this->queryParameters["bid"]=$bid;
-	}
+    public function setbid($bid)
+    {
+        $this->bid = $bid;
+        $this->queryParameters["bid"] = $bid;
+    }
 
-	public function getuidLoginEmail() {
-		return $this->uidLoginEmail;
-	}
+    public function getuidLoginEmail()
+    {
+        return $this->uidLoginEmail;
+    }
 
-	public function setuidLoginEmail($uidLoginEmail) {
-		$this->uidLoginEmail = $uidLoginEmail;
-		$this->queryParameters["uidLoginEmail"]=$uidLoginEmail;
-	}
+    public function setuidLoginEmail($uidLoginEmail)
+    {
+        $this->uidLoginEmail = $uidLoginEmail;
+        $this->queryParameters["uidLoginEmail"] = $uidLoginEmail;
+    }
 
-	public function getbidLoginEmail() {
-		return $this->bidLoginEmail;
-	}
+    public function getbidLoginEmail()
+    {
+        return $this->bidLoginEmail;
+    }
 
-	public function setbidLoginEmail($bidLoginEmail) {
-		$this->bidLoginEmail = $bidLoginEmail;
-		$this->queryParameters["bidLoginEmail"]=$bidLoginEmail;
-	}
+    public function setbidLoginEmail($bidLoginEmail)
+    {
+        $this->bidLoginEmail = $bidLoginEmail;
+        $this->queryParameters["bidLoginEmail"] = $bidLoginEmail;
+    }
 
-	public function getEngine() {
-		return $this->engine;
-	}
+    public function getEngine()
+    {
+        return $this->engine;
+    }
 
-	public function setEngine($engine) {
-		$this->engine = $engine;
-		$this->queryParameters["Engine"]=$engine;
-	}
+    public function setEngine($engine)
+    {
+        $this->engine = $engine;
+        $this->queryParameters["Engine"] = $engine;
+    }
 
-	public function getEngineVersion() {
-		return $this->engineVersion;
-	}
+    public function getEngineVersion()
+    {
+        return $this->engineVersion;
+    }
 
-	public function setEngineVersion($engineVersion) {
-		$this->engineVersion = $engineVersion;
-		$this->queryParameters["EngineVersion"]=$engineVersion;
-	}
+    public function setEngineVersion($engineVersion)
+    {
+        $this->engineVersion = $engineVersion;
+        $this->queryParameters["EngineVersion"] = $engineVersion;
+    }
 
-	public function getDBInstanceClass() {
-		return $this->dBInstanceClass;
-	}
+    public function getDBInstanceClass()
+    {
+        return $this->dBInstanceClass;
+    }
 
-	public function setDBInstanceClass($dBInstanceClass) {
-		$this->dBInstanceClass = $dBInstanceClass;
-		$this->queryParameters["DBInstanceClass"]=$dBInstanceClass;
-	}
+    public function setDBInstanceClass($dBInstanceClass)
+    {
+        $this->dBInstanceClass = $dBInstanceClass;
+        $this->queryParameters["DBInstanceClass"] = $dBInstanceClass;
+    }
 
-	public function getDBInstanceStorage() {
-		return $this->dBInstanceStorage;
-	}
+    public function getDBInstanceStorage()
+    {
+        return $this->dBInstanceStorage;
+    }
 
-	public function setDBInstanceStorage($dBInstanceStorage) {
-		$this->dBInstanceStorage = $dBInstanceStorage;
-		$this->queryParameters["DBInstanceStorage"]=$dBInstanceStorage;
-	}
+    public function setDBInstanceStorage($dBInstanceStorage)
+    {
+        $this->dBInstanceStorage = $dBInstanceStorage;
+        $this->queryParameters["DBInstanceStorage"] = $dBInstanceStorage;
+    }
 
-	public function getDBInstanceNetType() {
-		return $this->dBInstanceNetType;
-	}
+    public function getDBInstanceNetType()
+    {
+        return $this->dBInstanceNetType;
+    }
 
-	public function setDBInstanceNetType($dBInstanceNetType) {
-		$this->dBInstanceNetType = $dBInstanceNetType;
-		$this->queryParameters["DBInstanceNetType"]=$dBInstanceNetType;
-	}
+    public function setDBInstanceNetType($dBInstanceNetType)
+    {
+        $this->dBInstanceNetType = $dBInstanceNetType;
+        $this->queryParameters["DBInstanceNetType"] = $dBInstanceNetType;
+    }
 
-	public function getCharacterSetName() {
-		return $this->characterSetName;
-	}
+    public function getCharacterSetName()
+    {
+        return $this->characterSetName;
+    }
 
-	public function setCharacterSetName($characterSetName) {
-		$this->characterSetName = $characterSetName;
-		$this->queryParameters["CharacterSetName"]=$characterSetName;
-	}
+    public function setCharacterSetName($characterSetName)
+    {
+        $this->characterSetName = $characterSetName;
+        $this->queryParameters["CharacterSetName"] = $characterSetName;
+    }
 
-	public function getDBInstanceRemarks() {
-		return $this->dBInstanceRemarks;
-	}
+    public function getDBInstanceRemarks()
+    {
+        return $this->dBInstanceRemarks;
+    }
 
-	public function setDBInstanceRemarks($dBInstanceRemarks) {
-		$this->dBInstanceRemarks = $dBInstanceRemarks;
-		$this->queryParameters["DBInstanceRemarks"]=$dBInstanceRemarks;
-	}
+    public function setDBInstanceRemarks($dBInstanceRemarks)
+    {
+        $this->dBInstanceRemarks = $dBInstanceRemarks;
+        $this->queryParameters["DBInstanceRemarks"] = $dBInstanceRemarks;
+    }
 
-	public function getClientToken() {
-		return $this->clientToken;
-	}
+    public function getClientToken()
+    {
+        return $this->clientToken;
+    }
 
-	public function setClientToken($clientToken) {
-		$this->clientToken = $clientToken;
-		$this->queryParameters["ClientToken"]=$clientToken;
-	}
+    public function setClientToken($clientToken)
+    {
+        $this->clientToken = $clientToken;
+        $this->queryParameters["ClientToken"] = $clientToken;
+    }
 
-	public function getOwnerAccount() {
-		return $this->ownerAccount;
-	}
+    public function getOwnerAccount()
+    {
+        return $this->ownerAccount;
+    }
 
-	public function setOwnerAccount($ownerAccount) {
-		$this->ownerAccount = $ownerAccount;
-		$this->queryParameters["OwnerAccount"]=$ownerAccount;
-	}
-	
+    public function setOwnerAccount($ownerAccount)
+    {
+        $this->ownerAccount = $ownerAccount;
+        $this->queryParameters["OwnerAccount"] = $ownerAccount;
+    }
 }

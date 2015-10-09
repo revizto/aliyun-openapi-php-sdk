@@ -21,97 +21,112 @@ namespace Aliyun\Rds\Request\V20140815;
 
 class CreateBackupRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Rds", "2014-08-15", "CreateBackup");
-	}
+    public function __construct()
+    {
+        parent::__construct("Rds", "2014-08-15", "CreateBackup");
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $dBInstanceId;
+    private $dBInstanceId;
 
-	private  $dBName;
+    private $dBName;
 
-	private  $backupMethod;
+    private $backupMethod;
 
-	private  $backupType;
+    private $backupType;
 
-	private  $ownerAccount;
+    private $ownerAccount;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getDBInstanceId() {
-		return $this->dBInstanceId;
-	}
+    public function getDBInstanceId()
+    {
+        return $this->dBInstanceId;
+    }
 
-	public function setDBInstanceId($dBInstanceId) {
-		$this->dBInstanceId = $dBInstanceId;
-		$this->queryParameters["DBInstanceId"]=$dBInstanceId;
-	}
+    public function setDBInstanceId($dBInstanceId)
+    {
+        $this->dBInstanceId = $dBInstanceId;
+        $this->queryParameters["DBInstanceId"] = $dBInstanceId;
+    }
 
-	public function getDBName() {
-		return $this->dBName;
-	}
+    public function getDBName()
+    {
+        return $this->dBName;
+    }
 
-	public function setDBName($dBName) {
-		$this->dBName = $dBName;
-		$this->queryParameters["DBName"]=$dBName;
-	}
+    public function setDBName($dBName)
+    {
+        $this->dBName = $dBName;
+        $this->queryParameters["DBName"] = $dBName;
+    }
 
-	public function getBackupMethod() {
-		return $this->backupMethod;
-	}
+    public function getBackupMethod()
+    {
+        return $this->backupMethod;
+    }
 
-	public function setBackupMethod($backupMethod) {
-		$this->backupMethod = $backupMethod;
-		$this->queryParameters["BackupMethod"]=$backupMethod;
-	}
+    public function setBackupMethod($backupMethod)
+    {
+        $this->backupMethod = $backupMethod;
+        $this->queryParameters["BackupMethod"] = $backupMethod;
+    }
 
-	public function getBackupType() {
-		return $this->backupType;
-	}
+    public function getBackupType()
+    {
+        return $this->backupType;
+    }
 
-	public function setBackupType($backupType) {
-		$this->backupType = $backupType;
-		$this->queryParameters["BackupType"]=$backupType;
-	}
+    public function setBackupType($backupType)
+    {
+        $this->backupType = $backupType;
+        $this->queryParameters["BackupType"] = $backupType;
+    }
 
-	public function getOwnerAccount() {
-		return $this->ownerAccount;
-	}
+    public function getOwnerAccount()
+    {
+        return $this->ownerAccount;
+    }
 
-	public function setOwnerAccount($ownerAccount) {
-		$this->ownerAccount = $ownerAccount;
-		$this->queryParameters["OwnerAccount"]=$ownerAccount;
-	}
-	
+    public function setOwnerAccount($ownerAccount)
+    {
+        $this->ownerAccount = $ownerAccount;
+        $this->queryParameters["OwnerAccount"] = $ownerAccount;
+    }
 }

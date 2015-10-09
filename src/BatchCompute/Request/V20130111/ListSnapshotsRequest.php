@@ -21,11 +21,10 @@ namespace BatchCompute\Request\V20130111;
 
 class ListSnapshotsRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "ListSnapshots");
-		$this->setUriPattern("/snapshots");
-		$this->setMethod("GET");
-	}
-	
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "ListSnapshots");
+        $this->setUriPattern("/snapshots");
+        $this->setMethod("GET");
+    }
 }

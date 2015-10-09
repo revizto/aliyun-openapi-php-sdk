@@ -21,11 +21,10 @@ namespace BatchCompute\Request\V20130111;
 
 class PostJobRequest extends \RoaAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("BatchCompute", "2013-01-11", "PostJob");
-		$this->setUriPattern("/jobs");
-		$this->setMethod("POST");
-	}
-	
+    public function __construct()
+    {
+        parent::__construct("BatchCompute", "2013-01-11", "PostJob");
+        $this->setUriPattern("/jobs");
+        $this->setMethod("POST");
+    }
 }

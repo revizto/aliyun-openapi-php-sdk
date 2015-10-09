@@ -21,97 +21,112 @@ namespace Aliyun\Ecs\Request\V20140526;
 
 class CopyImageRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Ecs", "2014-05-26", "CopyImage");
-	}
+    public function __construct()
+    {
+        parent::__construct("Ecs", "2014-05-26", "CopyImage");
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $destinationImageName;
+    private $destinationImageName;
 
-	private  $destinationDescription;
+    private $destinationDescription;
 
-	private  $imageId;
+    private $imageId;
 
-	private  $destinationRegionId;
+    private $destinationRegionId;
 
-	private  $ownerAccount;
+    private $ownerAccount;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getDestinationImageName() {
-		return $this->destinationImageName;
-	}
+    public function getDestinationImageName()
+    {
+        return $this->destinationImageName;
+    }
 
-	public function setDestinationImageName($destinationImageName) {
-		$this->destinationImageName = $destinationImageName;
-		$this->queryParameters["DestinationImageName"]=$destinationImageName;
-	}
+    public function setDestinationImageName($destinationImageName)
+    {
+        $this->destinationImageName = $destinationImageName;
+        $this->queryParameters["DestinationImageName"] = $destinationImageName;
+    }
 
-	public function getDestinationDescription() {
-		return $this->destinationDescription;
-	}
+    public function getDestinationDescription()
+    {
+        return $this->destinationDescription;
+    }
 
-	public function setDestinationDescription($destinationDescription) {
-		$this->destinationDescription = $destinationDescription;
-		$this->queryParameters["DestinationDescription"]=$destinationDescription;
-	}
+    public function setDestinationDescription($destinationDescription)
+    {
+        $this->destinationDescription = $destinationDescription;
+        $this->queryParameters["DestinationDescription"] = $destinationDescription;
+    }
 
-	public function getImageId() {
-		return $this->imageId;
-	}
+    public function getImageId()
+    {
+        return $this->imageId;
+    }
 
-	public function setImageId($imageId) {
-		$this->imageId = $imageId;
-		$this->queryParameters["ImageId"]=$imageId;
-	}
+    public function setImageId($imageId)
+    {
+        $this->imageId = $imageId;
+        $this->queryParameters["ImageId"] = $imageId;
+    }
 
-	public function getDestinationRegionId() {
-		return $this->destinationRegionId;
-	}
+    public function getDestinationRegionId()
+    {
+        return $this->destinationRegionId;
+    }
 
-	public function setDestinationRegionId($destinationRegionId) {
-		$this->destinationRegionId = $destinationRegionId;
-		$this->queryParameters["DestinationRegionId"]=$destinationRegionId;
-	}
+    public function setDestinationRegionId($destinationRegionId)
+    {
+        $this->destinationRegionId = $destinationRegionId;
+        $this->queryParameters["DestinationRegionId"] = $destinationRegionId;
+    }
 
-	public function getOwnerAccount() {
-		return $this->ownerAccount;
-	}
+    public function getOwnerAccount()
+    {
+        return $this->ownerAccount;
+    }
 
-	public function setOwnerAccount($ownerAccount) {
-		$this->ownerAccount = $ownerAccount;
-		$this->queryParameters["OwnerAccount"]=$ownerAccount;
-	}
-	
+    public function setOwnerAccount($ownerAccount)
+    {
+        $this->ownerAccount = $ownerAccount;
+        $this->queryParameters["OwnerAccount"] = $ownerAccount;
+    }
 }

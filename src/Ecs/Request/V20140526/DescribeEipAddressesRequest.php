@@ -21,163 +21,190 @@ namespace Aliyun\Ecs\Request\V20140526;
 
 class DescribeEipAddressesRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Ecs", "2014-05-26", "DescribeEipAddresses");
-	}
+    public function __construct()
+    {
+        parent::__construct("Ecs", "2014-05-26", "DescribeEipAddresses");
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $status;
+    private $status;
 
-	private  $eipAddress;
+    private $eipAddress;
 
-	private  $allocationId;
+    private $allocationId;
 
-	private  $pageNumber;
+    private $pageNumber;
 
-	private  $pageSize;
+    private $pageSize;
 
-	private  $ownerAccount;
+    private $ownerAccount;
 
-	private  $filter1Key;
+    private $filter1Key;
 
-	private  $filter2Key;
+    private $filter2Key;
 
-	private  $filter1Value;
+    private $filter1Value;
 
-	private  $filter2Value;
+    private $filter2Value;
 
-	private  $lockReason;
+    private $lockReason;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getStatus() {
-		return $this->status;
-	}
+    public function getStatus()
+    {
+        return $this->status;
+    }
 
-	public function setStatus($status) {
-		$this->status = $status;
-		$this->queryParameters["Status"]=$status;
-	}
+    public function setStatus($status)
+    {
+        $this->status = $status;
+        $this->queryParameters["Status"] = $status;
+    }
 
-	public function getEipAddress() {
-		return $this->eipAddress;
-	}
+    public function getEipAddress()
+    {
+        return $this->eipAddress;
+    }
 
-	public function setEipAddress($eipAddress) {
-		$this->eipAddress = $eipAddress;
-		$this->queryParameters["EipAddress"]=$eipAddress;
-	}
+    public function setEipAddress($eipAddress)
+    {
+        $this->eipAddress = $eipAddress;
+        $this->queryParameters["EipAddress"] = $eipAddress;
+    }
 
-	public function getAllocationId() {
-		return $this->allocationId;
-	}
+    public function getAllocationId()
+    {
+        return $this->allocationId;
+    }
 
-	public function setAllocationId($allocationId) {
-		$this->allocationId = $allocationId;
-		$this->queryParameters["AllocationId"]=$allocationId;
-	}
+    public function setAllocationId($allocationId)
+    {
+        $this->allocationId = $allocationId;
+        $this->queryParameters["AllocationId"] = $allocationId;
+    }
 
-	public function getPageNumber() {
-		return $this->pageNumber;
-	}
+    public function getPageNumber()
+    {
+        return $this->pageNumber;
+    }
 
-	public function setPageNumber($pageNumber) {
-		$this->pageNumber = $pageNumber;
-		$this->queryParameters["PageNumber"]=$pageNumber;
-	}
+    public function setPageNumber($pageNumber)
+    {
+        $this->pageNumber = $pageNumber;
+        $this->queryParameters["PageNumber"] = $pageNumber;
+    }
 
-	public function getPageSize() {
-		return $this->pageSize;
-	}
+    public function getPageSize()
+    {
+        return $this->pageSize;
+    }
 
-	public function setPageSize($pageSize) {
-		$this->pageSize = $pageSize;
-		$this->queryParameters["PageSize"]=$pageSize;
-	}
+    public function setPageSize($pageSize)
+    {
+        $this->pageSize = $pageSize;
+        $this->queryParameters["PageSize"] = $pageSize;
+    }
 
-	public function getOwnerAccount() {
-		return $this->ownerAccount;
-	}
+    public function getOwnerAccount()
+    {
+        return $this->ownerAccount;
+    }
 
-	public function setOwnerAccount($ownerAccount) {
-		$this->ownerAccount = $ownerAccount;
-		$this->queryParameters["OwnerAccount"]=$ownerAccount;
-	}
+    public function setOwnerAccount($ownerAccount)
+    {
+        $this->ownerAccount = $ownerAccount;
+        $this->queryParameters["OwnerAccount"] = $ownerAccount;
+    }
 
-	public function getFilter1Key() {
-		return $this->filter1Key;
-	}
+    public function getFilter1Key()
+    {
+        return $this->filter1Key;
+    }
 
-	public function setFilter1Key($filter1Key) {
-		$this->filter1Key = $filter1Key;
-		$this->queryParameters["Filter1Key"]=$filter1Key;
-	}
+    public function setFilter1Key($filter1Key)
+    {
+        $this->filter1Key = $filter1Key;
+        $this->queryParameters["Filter1Key"] = $filter1Key;
+    }
 
-	public function getFilter2Key() {
-		return $this->filter2Key;
-	}
+    public function getFilter2Key()
+    {
+        return $this->filter2Key;
+    }
 
-	public function setFilter2Key($filter2Key) {
-		$this->filter2Key = $filter2Key;
-		$this->queryParameters["Filter2Key"]=$filter2Key;
-	}
+    public function setFilter2Key($filter2Key)
+    {
+        $this->filter2Key = $filter2Key;
+        $this->queryParameters["Filter2Key"] = $filter2Key;
+    }
 
-	public function getFilter1Value() {
-		return $this->filter1Value;
-	}
+    public function getFilter1Value()
+    {
+        return $this->filter1Value;
+    }
 
-	public function setFilter1Value($filter1Value) {
-		$this->filter1Value = $filter1Value;
-		$this->queryParameters["Filter1Value"]=$filter1Value;
-	}
+    public function setFilter1Value($filter1Value)
+    {
+        $this->filter1Value = $filter1Value;
+        $this->queryParameters["Filter1Value"] = $filter1Value;
+    }
 
-	public function getFilter2Value() {
-		return $this->filter2Value;
-	}
+    public function getFilter2Value()
+    {
+        return $this->filter2Value;
+    }
 
-	public function setFilter2Value($filter2Value) {
-		$this->filter2Value = $filter2Value;
-		$this->queryParameters["Filter2Value"]=$filter2Value;
-	}
+    public function setFilter2Value($filter2Value)
+    {
+        $this->filter2Value = $filter2Value;
+        $this->queryParameters["Filter2Value"] = $filter2Value;
+    }
 
-	public function getLockReason() {
-		return $this->lockReason;
-	}
+    public function getLockReason()
+    {
+        return $this->lockReason;
+    }
 
-	public function setLockReason($lockReason) {
-		$this->lockReason = $lockReason;
-		$this->queryParameters["LockReason"]=$lockReason;
-	}
-	
+    public function setLockReason($lockReason)
+    {
+        $this->lockReason = $lockReason;
+        $this->queryParameters["LockReason"] = $lockReason;
+    }
 }

@@ -21,119 +21,138 @@ namespace Aliyun\Rds\Request\V20140815;
 
 class DescribeBackupTasksRequest extends \RpcAcsRequest
 {
-	function  __construct()
-	{
-		parent::__construct("Rds", "2014-08-15", "DescribeBackupTasks");
-	}
+    public function __construct()
+    {
+        parent::__construct("Rds", "2014-08-15", "DescribeBackupTasks");
+    }
 
-	private  $ownerId;
+    private $ownerId;
 
-	private  $resourceOwnerAccount;
+    private $resourceOwnerAccount;
 
-	private  $resourceOwnerId;
+    private $resourceOwnerId;
 
-	private  $clientToken;
+    private $clientToken;
 
-	private  $flag;
+    private $flag;
 
-	private  $ownerAccount;
+    private $ownerAccount;
 
-	private  $dBInstanceId;
+    private $dBInstanceId;
 
-	private  $backupJobId;
+    private $backupJobId;
 
-	private  $backupMode;
+    private $backupMode;
 
-	private  $backupJobStatus;
+    private $backupJobStatus;
 
-	public function getOwnerId() {
-		return $this->ownerId;
-	}
+    public function getOwnerId()
+    {
+        return $this->ownerId;
+    }
 
-	public function setOwnerId($ownerId) {
-		$this->ownerId = $ownerId;
-		$this->queryParameters["OwnerId"]=$ownerId;
-	}
+    public function setOwnerId($ownerId)
+    {
+        $this->ownerId = $ownerId;
+        $this->queryParameters["OwnerId"] = $ownerId;
+    }
 
-	public function getResourceOwnerAccount() {
-		return $this->resourceOwnerAccount;
-	}
+    public function getResourceOwnerAccount()
+    {
+        return $this->resourceOwnerAccount;
+    }
 
-	public function setResourceOwnerAccount($resourceOwnerAccount) {
-		$this->resourceOwnerAccount = $resourceOwnerAccount;
-		$this->queryParameters["ResourceOwnerAccount"]=$resourceOwnerAccount;
-	}
+    public function setResourceOwnerAccount($resourceOwnerAccount)
+    {
+        $this->resourceOwnerAccount = $resourceOwnerAccount;
+        $this->queryParameters["ResourceOwnerAccount"] = $resourceOwnerAccount;
+    }
 
-	public function getResourceOwnerId() {
-		return $this->resourceOwnerId;
-	}
+    public function getResourceOwnerId()
+    {
+        return $this->resourceOwnerId;
+    }
 
-	public function setResourceOwnerId($resourceOwnerId) {
-		$this->resourceOwnerId = $resourceOwnerId;
-		$this->queryParameters["ResourceOwnerId"]=$resourceOwnerId;
-	}
+    public function setResourceOwnerId($resourceOwnerId)
+    {
+        $this->resourceOwnerId = $resourceOwnerId;
+        $this->queryParameters["ResourceOwnerId"] = $resourceOwnerId;
+    }
 
-	public function getClientToken() {
-		return $this->clientToken;
-	}
+    public function getClientToken()
+    {
+        return $this->clientToken;
+    }
 
-	public function setClientToken($clientToken) {
-		$this->clientToken = $clientToken;
-		$this->queryParameters["ClientToken"]=$clientToken;
-	}
+    public function setClientToken($clientToken)
+    {
+        $this->clientToken = $clientToken;
+        $this->queryParameters["ClientToken"] = $clientToken;
+    }
 
-	public function getFlag() {
-		return $this->flag;
-	}
+    public function getFlag()
+    {
+        return $this->flag;
+    }
 
-	public function setFlag($flag) {
-		$this->flag = $flag;
-		$this->queryParameters["Flag"]=$flag;
-	}
+    public function setFlag($flag)
+    {
+        $this->flag = $flag;
+        $this->queryParameters["Flag"] = $flag;
+    }
 
-	public function getOwnerAccount() {
-		return $this->ownerAccount;
-	}
+    public function getOwnerAccount()
+    {
+        return $this->ownerAccount;
+    }
 
-	public function setOwnerAccount($ownerAccount) {
-		$this->ownerAccount = $ownerAccount;
-		$this->queryParameters["OwnerAccount"]=$ownerAccount;
-	}
+    public function setOwnerAccount($ownerAccount)
+    {
+        $this->ownerAccount = $ownerAccount;
+        $this->queryParameters["OwnerAccount"] = $ownerAccount;
+    }
 
-	public function getDBInstanceId() {
-		return $this->dBInstanceId;
-	}
+    public function getDBInstanceId()
+    {
+        return $this->dBInstanceId;
+    }
 
-	public function setDBInstanceId($dBInstanceId) {
-		$this->dBInstanceId = $dBInstanceId;
-		$this->queryParameters["DBInstanceId"]=$dBInstanceId;
-	}
+    public function setDBInstanceId($dBInstanceId)
+    {
+        $this->dBInstanceId = $dBInstanceId;
+        $this->queryParameters["DBInstanceId"] = $dBInstanceId;
+    }
 
-	public function getBackupJobId() {
-		return $this->backupJobId;
-	}
+    public function getBackupJobId()
+    {
+        return $this->backupJobId;
+    }
 
-	public function setBackupJobId($backupJobId) {
-		$this->backupJobId = $backupJobId;
-		$this->queryParameters["BackupJobId"]=$backupJobId;
-	}
+    public function setBackupJobId($backupJobId)
+    {
+        $this->backupJobId = $backupJobId;
+        $this->queryParameters["BackupJobId"] = $backupJobId;
+    }
 
-	public function getBackupMode() {
-		return $this->backupMode;
-	}
+    public function getBackupMode()
+    {
+        return $this->backupMode;
+    }
 
-	public function setBackupMode($backupMode) {
-		$this->backupMode = $backupMode;
-		$this->queryParameters["BackupMode"]=$backupMode;
-	}
+    public function setBackupMode($backupMode)
+    {
+        $this->backupMode = $backupMode;
+        $this->queryParameters["BackupMode"] = $backupMode;
+    }
 
-	public function getBackupJobStatus() {
-		return $this->backupJobStatus;
-	}
+    public function getBackupJobStatus()
+    {
+        return $this->backupJobStatus;
+    }
 
-	public function setBackupJobStatus($backupJobStatus) {
-		$this->backupJobStatus = $backupJobStatus;
-		$this->queryParameters["BackupJobStatus"]=$backupJobStatus;
-	}
-	
+    public function setBackupJobStatus($backupJobStatus)
+    {
+        $this->backupJobStatus = $backupJobStatus;
+        $this->queryParameters["BackupJobStatus"] = $backupJobStatus;
+    }
 }
