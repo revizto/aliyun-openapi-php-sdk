@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeOptimizeAdviceByDBARequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeOptimizeAdviceByDBARequest extends RpcAcsRequest
 {
     public function __construct()
     {

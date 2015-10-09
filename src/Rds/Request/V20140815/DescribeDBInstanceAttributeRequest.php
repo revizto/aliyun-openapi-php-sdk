@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeDBInstanceAttributeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeDBInstanceAttributeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

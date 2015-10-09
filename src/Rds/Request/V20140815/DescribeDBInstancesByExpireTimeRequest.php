@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeDBInstancesByExpireTimeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeDBInstancesByExpireTimeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

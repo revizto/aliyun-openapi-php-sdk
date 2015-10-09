@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeOptimizeAdviceOnExcessIndexRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeOptimizeAdviceOnExcessIndexRequest extends RpcAcsRequest
 {
     public function __construct()
     {

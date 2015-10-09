@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DeleteSecurityGroupRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DeleteSecurityGroupRequest extends RpcAcsRequest
 {
     public function __construct()
     {

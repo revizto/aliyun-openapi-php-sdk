@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class DescribeInstanceTypesRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeInstanceTypesRequest extends RpcAcsRequest
 {
     public function __construct()
     {

@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CheckAccountNameAvailableRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CheckAccountNameAvailableRequest extends RpcAcsRequest
 {
     public function __construct()
     {

@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class UnlockDBInstanceRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class UnlockDBInstanceRequest extends RpcAcsRequest
 {
     public function __construct()
     {

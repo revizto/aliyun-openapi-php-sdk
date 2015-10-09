@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CreateAccountRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateAccountRequest extends RpcAcsRequest
 {
     public function __construct()
     {

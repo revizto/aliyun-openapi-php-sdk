@@ -23,7 +23,7 @@ use Aliyun\Ecs\Request\V20140526 as Ecs;
 use Aliyun\Core\DefaultAcsClient;
 use Aliyun\Core\Profile\DefaultProfile;
 
-$iClientProfile = DefaultProfile::getProfile("cn-hangzhou", "k95V3MEIxHagxACY", "Uk1klNK1WmYS1F2xXrMMgYRgGTs9sT");
+$iClientProfile = DefaultProfile::getProfile("cn-hangzhou", "<your accessKey>", "<your accessSecret>");
 $client = new DefaultAcsClient($iClientProfile);
 
 $request = new Ecs\DescribeRegionsRequest();

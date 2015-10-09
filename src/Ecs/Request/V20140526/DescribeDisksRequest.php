@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DescribeDisksRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeDisksRequest extends RpcAcsRequest
 {
     public function __construct()
     {

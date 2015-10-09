@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class DescribeRouteTablesRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeRouteTablesRequest extends RpcAcsRequest
 {
     public function __construct()
     {

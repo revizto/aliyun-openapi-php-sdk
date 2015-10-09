@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class DescribeSecurityGroupAttributeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeSecurityGroupAttributeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

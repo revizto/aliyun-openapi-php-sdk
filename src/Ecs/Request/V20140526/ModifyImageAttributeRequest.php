@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ModifyImageAttributeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifyImageAttributeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

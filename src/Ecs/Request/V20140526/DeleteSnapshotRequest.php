@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DeleteSnapshotRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DeleteSnapshotRequest extends RpcAcsRequest
 {
     public function __construct()
     {

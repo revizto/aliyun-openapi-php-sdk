@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class StopLoadBalancerListenerRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class StopLoadBalancerListenerRequest extends RpcAcsRequest
 {
     public function __construct()
     {

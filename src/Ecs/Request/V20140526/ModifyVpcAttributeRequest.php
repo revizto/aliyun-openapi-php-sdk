@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ModifyVpcAttributeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifyVpcAttributeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

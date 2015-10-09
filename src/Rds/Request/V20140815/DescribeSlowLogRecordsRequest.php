@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeSlowLogRecordsRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeSlowLogRecordsRequest extends RpcAcsRequest
 {
     public function __construct()
     {

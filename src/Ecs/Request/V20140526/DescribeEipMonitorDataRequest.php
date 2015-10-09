@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DescribeEipMonitorDataRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeEipMonitorDataRequest extends RpcAcsRequest
 {
     public function __construct()
     {

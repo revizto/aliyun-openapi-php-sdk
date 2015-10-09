@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class RestartDBInstanceRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class RestartDBInstanceRequest extends RpcAcsRequest
 {
     public function __construct()
     {

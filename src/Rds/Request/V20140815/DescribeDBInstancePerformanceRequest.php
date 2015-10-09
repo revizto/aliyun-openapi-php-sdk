@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeDBInstancePerformanceRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeDBInstancePerformanceRequest extends RpcAcsRequest
 {
     public function __construct()
     {

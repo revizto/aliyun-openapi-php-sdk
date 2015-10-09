@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class CheckAutoSnapshotPolicyRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CheckAutoSnapshotPolicyRequest extends RpcAcsRequest
 {
     public function __construct()
     {

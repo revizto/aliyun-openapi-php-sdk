@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class CreateSnapshotRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateSnapshotRequest extends RpcAcsRequest
 {
     public function __construct()
     {

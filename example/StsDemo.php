@@ -17,8 +17,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-include_once '../aliyun-php-sdk-core/Config.php';
-use \Sts\Request\V20150401 as Sts;
+include_once '../vendor/autoload.php';
+
+use Aliyun\Sts\Request\V20150401 as Sts;
+use Aliyun\Core\DefaultAcsClient;
+use Aliyun\Core\Profile\DefaultProfile;
 
 $iClientProfile = DefaultProfile::getProfile("cn-hangzhou", "<your accessKey>", "<your accessSecret>");
 $client = new DefaultAcsClient($iClientProfile);

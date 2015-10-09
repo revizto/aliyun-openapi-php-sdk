@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CheckDBNameAvailableRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CheckDBNameAvailableRequest extends RpcAcsRequest
 {
     public function __construct()
     {

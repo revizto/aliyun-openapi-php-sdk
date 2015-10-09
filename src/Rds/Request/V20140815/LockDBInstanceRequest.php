@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class LockDBInstanceRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class LockDBInstanceRequest extends RpcAcsRequest
 {
     public function __construct()
     {

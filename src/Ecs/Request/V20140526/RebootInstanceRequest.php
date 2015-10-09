@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class RebootInstanceRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class RebootInstanceRequest extends RpcAcsRequest
 {
     public function __construct()
     {

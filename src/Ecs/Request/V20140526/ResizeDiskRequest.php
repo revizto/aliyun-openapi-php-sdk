@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ResizeDiskRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ResizeDiskRequest extends RpcAcsRequest
 {
     public function __construct()
     {

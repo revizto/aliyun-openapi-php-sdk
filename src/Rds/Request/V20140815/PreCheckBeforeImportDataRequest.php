@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class PreCheckBeforeImportDataRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class PreCheckBeforeImportDataRequest extends RpcAcsRequest
 {
     public function __construct()
     {

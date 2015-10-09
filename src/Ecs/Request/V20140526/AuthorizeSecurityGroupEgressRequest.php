@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class AuthorizeSecurityGroupEgressRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class AuthorizeSecurityGroupEgressRequest extends RpcAcsRequest
 {
     public function __construct()
     {

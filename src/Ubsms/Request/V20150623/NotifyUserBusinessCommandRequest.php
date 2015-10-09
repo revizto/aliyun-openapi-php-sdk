@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ubsms\Request\V20150623;
 
-class NotifyUserBusinessCommandRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class NotifyUserBusinessCommandRequest extends RpcAcsRequest
 {
     public function __construct()
     {

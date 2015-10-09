@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CreatePostpaidDBInstanceForChannelRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreatePostpaidDBInstanceForChannelRequest extends RpcAcsRequest
 {
     public function __construct()
     {

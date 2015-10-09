@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DeleteDiskRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DeleteDiskRequest extends RpcAcsRequest
 {
     public function __construct()
     {

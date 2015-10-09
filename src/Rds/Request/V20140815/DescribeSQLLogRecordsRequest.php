@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeSQLLogRecordsRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeSQLLogRecordsRequest extends RpcAcsRequest
 {
     public function __construct()
     {

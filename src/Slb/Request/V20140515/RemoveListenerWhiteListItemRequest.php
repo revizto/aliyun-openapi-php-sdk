@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class RemoveListenerWhiteListItemRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class RemoveListenerWhiteListItemRequest extends RpcAcsRequest
 {
     public function __construct()
     {

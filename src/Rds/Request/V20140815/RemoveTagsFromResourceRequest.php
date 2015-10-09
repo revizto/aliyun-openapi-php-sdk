@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class RemoveTagsFromResourceRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class RemoveTagsFromResourceRequest extends RpcAcsRequest
 {
     public function __construct()
     {

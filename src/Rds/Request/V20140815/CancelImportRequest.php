@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CancelImportRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CancelImportRequest extends RpcAcsRequest
 {
     public function __construct()
     {

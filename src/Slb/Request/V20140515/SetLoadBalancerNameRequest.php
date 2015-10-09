@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class SetLoadBalancerNameRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class SetLoadBalancerNameRequest extends RpcAcsRequest
 {
     public function __construct()
     {

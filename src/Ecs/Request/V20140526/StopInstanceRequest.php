@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class StopInstanceRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class StopInstanceRequest extends RpcAcsRequest
 {
     public function __construct()
     {

@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ModifyInstanceVncPasswdRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifyInstanceVncPasswdRequest extends RpcAcsRequest
 {
     public function __construct()
     {

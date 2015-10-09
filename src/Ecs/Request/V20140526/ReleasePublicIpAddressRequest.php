@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ReleasePublicIpAddressRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ReleasePublicIpAddressRequest extends RpcAcsRequest
 {
     public function __construct()
     {

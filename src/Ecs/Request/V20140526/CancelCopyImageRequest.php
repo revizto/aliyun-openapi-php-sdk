@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class CancelCopyImageRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CancelCopyImageRequest extends RpcAcsRequest
 {
     public function __construct()
     {

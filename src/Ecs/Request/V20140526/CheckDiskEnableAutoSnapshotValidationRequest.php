@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class CheckDiskEnableAutoSnapshotValidationRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CheckDiskEnableAutoSnapshotValidationRequest extends RpcAcsRequest
 {
     public function __construct()
     {

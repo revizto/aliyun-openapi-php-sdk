@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ReleaseEipAddressRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ReleaseEipAddressRequest extends RpcAcsRequest
 {
     public function __construct()
     {

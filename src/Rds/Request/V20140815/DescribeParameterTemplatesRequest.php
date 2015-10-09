@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeParameterTemplatesRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeParameterTemplatesRequest extends RpcAcsRequest
 {
     public function __construct()
     {

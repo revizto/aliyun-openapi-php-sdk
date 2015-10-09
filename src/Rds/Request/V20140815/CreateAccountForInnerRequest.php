@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CreateAccountForInnerRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateAccountForInnerRequest extends RpcAcsRequest
 {
     public function __construct()
     {

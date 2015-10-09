@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Sts\Request\V20150401;
 
-class GetFederationTokenRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class GetFederationTokenRequest extends RpcAcsRequest
 {
     public function __construct()
     {

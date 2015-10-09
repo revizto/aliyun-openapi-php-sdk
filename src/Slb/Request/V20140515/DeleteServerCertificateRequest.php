@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class DeleteServerCertificateRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DeleteServerCertificateRequest extends RpcAcsRequest
 {
     public function __construct()
     {

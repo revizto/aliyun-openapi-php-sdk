@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class DescribeListenerAccessControlAttributeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeListenerAccessControlAttributeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

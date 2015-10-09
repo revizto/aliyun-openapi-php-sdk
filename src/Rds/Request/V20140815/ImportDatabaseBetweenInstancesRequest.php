@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class ImportDatabaseBetweenInstancesRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ImportDatabaseBetweenInstancesRequest extends RpcAcsRequest
 {
     public function __construct()
     {

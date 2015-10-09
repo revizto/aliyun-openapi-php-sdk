@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class DescribeResourceByTagsRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeResourceByTagsRequest extends RpcAcsRequest
 {
     public function __construct()
     {

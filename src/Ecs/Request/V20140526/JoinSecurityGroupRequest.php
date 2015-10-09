@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class JoinSecurityGroupRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class JoinSecurityGroupRequest extends RpcAcsRequest
 {
     public function __construct()
     {

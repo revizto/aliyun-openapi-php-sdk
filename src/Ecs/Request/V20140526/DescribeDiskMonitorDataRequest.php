@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DescribeDiskMonitorDataRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeDiskMonitorDataRequest extends RpcAcsRequest
 {
     public function __construct()
     {

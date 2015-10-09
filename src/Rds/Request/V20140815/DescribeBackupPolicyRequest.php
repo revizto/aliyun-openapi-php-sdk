@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeBackupPolicyRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeBackupPolicyRequest extends RpcAcsRequest
 {
     public function __construct()
     {

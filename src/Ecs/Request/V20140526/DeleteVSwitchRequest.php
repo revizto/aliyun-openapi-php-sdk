@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DeleteVSwitchRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DeleteVSwitchRequest extends RpcAcsRequest
 {
     public function __construct()
     {

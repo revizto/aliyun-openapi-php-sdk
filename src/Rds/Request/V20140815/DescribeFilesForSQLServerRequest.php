@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeFilesForSQLServerRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeFilesForSQLServerRequest extends RpcAcsRequest
 {
     public function __construct()
     {

@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class CreateLoadBalancerTCPListenerRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateLoadBalancerTCPListenerRequest extends RpcAcsRequest
 {
     public function __construct()
     {

@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ModifyInstanceSpecRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifyInstanceSpecRequest extends RpcAcsRequest
 {
     public function __construct()
     {

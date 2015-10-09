@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DescribeInstancePhysicalAttributeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeInstancePhysicalAttributeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

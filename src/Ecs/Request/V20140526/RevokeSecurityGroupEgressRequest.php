@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class RevokeSecurityGroupEgressRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class RevokeSecurityGroupEgressRequest extends RpcAcsRequest
 {
     public function __construct()
     {

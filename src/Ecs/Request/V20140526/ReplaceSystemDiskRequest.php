@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ReplaceSystemDiskRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ReplaceSystemDiskRequest extends RpcAcsRequest
 {
     public function __construct()
     {

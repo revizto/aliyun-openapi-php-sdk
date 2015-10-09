@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CreateReadOnlyDBInstanceRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateReadOnlyDBInstanceRequest extends RpcAcsRequest
 {
     public function __construct()
     {

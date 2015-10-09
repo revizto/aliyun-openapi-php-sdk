@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CreateDBInstanceForChannelRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateDBInstanceForChannelRequest extends RpcAcsRequest
 {
     public function __construct()
     {

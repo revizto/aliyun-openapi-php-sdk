@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class ModifyDBInstanceConnectionStringRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifyDBInstanceConnectionStringRequest extends RpcAcsRequest
 {
     public function __construct()
     {

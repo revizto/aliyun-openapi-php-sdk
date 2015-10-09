@@ -19,7 +19,9 @@
  */
 namespace Aliyun\UbsmsInner\Request\V20150623;
 
-class DescribeUserBusinessStatusRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeUserBusinessStatusRequest extends RpcAcsRequest
 {
     public function __construct()
     {

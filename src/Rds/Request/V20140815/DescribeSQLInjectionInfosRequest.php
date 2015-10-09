@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeSQLInjectionInfosRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeSQLInjectionInfosRequest extends RpcAcsRequest
 {
     public function __construct()
     {

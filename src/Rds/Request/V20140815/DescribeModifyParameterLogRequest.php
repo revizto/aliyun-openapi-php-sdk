@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeModifyParameterLogRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeModifyParameterLogRequest extends RpcAcsRequest
 {
     public function __construct()
     {

@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class ResetAccountPasswordRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ResetAccountPasswordRequest extends RpcAcsRequest
 {
     public function __construct()
     {

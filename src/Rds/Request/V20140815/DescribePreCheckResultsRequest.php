@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribePreCheckResultsRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribePreCheckResultsRequest extends RpcAcsRequest
 {
     public function __construct()
     {

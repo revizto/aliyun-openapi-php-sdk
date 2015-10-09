@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class CopyImageRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CopyImageRequest extends RpcAcsRequest
 {
     public function __construct()
     {

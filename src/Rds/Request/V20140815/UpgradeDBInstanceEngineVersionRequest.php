@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class UpgradeDBInstanceEngineVersionRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class UpgradeDBInstanceEngineVersionRequest extends RpcAcsRequest
 {
     public function __construct()
     {

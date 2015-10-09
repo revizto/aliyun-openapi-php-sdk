@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class ModifyDBInstanceDescriptionRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifyDBInstanceDescriptionRequest extends RpcAcsRequest
 {
     public function __construct()
     {

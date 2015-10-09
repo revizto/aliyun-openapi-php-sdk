@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class CreateVSwitchRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateVSwitchRequest extends RpcAcsRequest
 {
     public function __construct()
     {

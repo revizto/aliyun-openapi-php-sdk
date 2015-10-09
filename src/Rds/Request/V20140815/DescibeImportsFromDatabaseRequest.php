@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescibeImportsFromDatabaseRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescibeImportsFromDatabaseRequest extends RpcAcsRequest
 {
     public function __construct()
     {

@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class DescribeServerCertificatesRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeServerCertificatesRequest extends RpcAcsRequest
 {
     public function __construct()
     {

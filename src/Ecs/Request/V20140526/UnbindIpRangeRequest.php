@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class UnbindIpRangeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class UnbindIpRangeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

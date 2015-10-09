@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class AllocateInstancePublicConnectionRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class AllocateInstancePublicConnectionRequest extends RpcAcsRequest
 {
     public function __construct()
     {

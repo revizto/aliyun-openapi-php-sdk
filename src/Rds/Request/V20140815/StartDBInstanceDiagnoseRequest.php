@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class StartDBInstanceDiagnoseRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class StartDBInstanceDiagnoseRequest extends RpcAcsRequest
 {
     public function __construct()
     {

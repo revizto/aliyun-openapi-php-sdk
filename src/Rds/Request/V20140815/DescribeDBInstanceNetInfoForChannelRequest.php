@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeDBInstanceNetInfoForChannelRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeDBInstanceNetInfoForChannelRequest extends RpcAcsRequest
 {
     public function __construct()
     {

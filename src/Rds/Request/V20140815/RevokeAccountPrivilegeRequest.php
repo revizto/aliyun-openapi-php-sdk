@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class RevokeAccountPrivilegeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class RevokeAccountPrivilegeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

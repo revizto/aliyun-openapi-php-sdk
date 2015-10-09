@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class BatchRevokeAccountPrivilegeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class BatchRevokeAccountPrivilegeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

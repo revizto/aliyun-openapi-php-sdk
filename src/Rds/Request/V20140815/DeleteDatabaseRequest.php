@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DeleteDatabaseRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DeleteDatabaseRequest extends RpcAcsRequest
 {
     public function __construct()
     {

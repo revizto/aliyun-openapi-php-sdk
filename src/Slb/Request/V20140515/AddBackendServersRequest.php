@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class AddBackendServersRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class AddBackendServersRequest extends RpcAcsRequest
 {
     public function __construct()
     {

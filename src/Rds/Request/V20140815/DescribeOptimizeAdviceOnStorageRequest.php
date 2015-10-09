@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeOptimizeAdviceOnStorageRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeOptimizeAdviceOnStorageRequest extends RpcAcsRequest
 {
     public function __construct()
     {

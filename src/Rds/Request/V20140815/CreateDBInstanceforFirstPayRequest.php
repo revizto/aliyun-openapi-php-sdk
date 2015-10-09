@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CreateDBInstanceforFirstPayRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateDBInstanceforFirstPayRequest extends RpcAcsRequest
 {
     public function __construct()
     {

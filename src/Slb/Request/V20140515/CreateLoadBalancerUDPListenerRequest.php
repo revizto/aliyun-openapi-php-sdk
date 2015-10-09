@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Slb\Request\V20140515;
 
-class CreateLoadBalancerUDPListenerRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateLoadBalancerUDPListenerRequest extends RpcAcsRequest
 {
     public function __construct()
     {

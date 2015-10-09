@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class ModifySecurityIpsRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifySecurityIpsRequest extends RpcAcsRequest
 {
     public function __construct()
     {

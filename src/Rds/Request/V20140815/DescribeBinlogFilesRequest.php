@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeBinlogFilesRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeBinlogFilesRequest extends RpcAcsRequest
 {
     public function __construct()
     {

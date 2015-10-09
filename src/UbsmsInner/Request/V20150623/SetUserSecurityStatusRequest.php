@@ -19,7 +19,9 @@
  */
 namespace Aliyun\UbsmsInner\Request\V20150623;
 
-class SetUserSecurityStatusRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class SetUserSecurityStatusRequest extends RpcAcsRequest
 {
     public function __construct()
     {

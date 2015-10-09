@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class DescribeIntranetAttributeKbRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeIntranetAttributeKbRequest extends RpcAcsRequest
 {
     public function __construct()
     {

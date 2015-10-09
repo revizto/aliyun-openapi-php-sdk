@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ReInitDiskRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ReInitDiskRequest extends RpcAcsRequest
 {
     public function __construct()
     {

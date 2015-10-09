@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Ecs\Request\V20140526;
 
-class DescribeImageSharePermissionRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeImageSharePermissionRequest extends RpcAcsRequest
 {
     public function __construct()
     {

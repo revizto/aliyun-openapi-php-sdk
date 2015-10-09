@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ModifyInstanceNetworkSpecRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifyInstanceNetworkSpecRequest extends RpcAcsRequest
 {
     public function __construct()
     {

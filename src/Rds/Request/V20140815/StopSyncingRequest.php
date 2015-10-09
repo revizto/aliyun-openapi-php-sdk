@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class StopSyncingRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class StopSyncingRequest extends RpcAcsRequest
 {
     public function __construct()
     {

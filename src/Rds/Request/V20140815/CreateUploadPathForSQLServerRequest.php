@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class CreateUploadPathForSQLServerRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class CreateUploadPathForSQLServerRequest extends RpcAcsRequest
 {
     public function __construct()
     {

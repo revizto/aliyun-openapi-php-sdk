@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class SwitchDBInstanceNetTypeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class SwitchDBInstanceNetTypeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class DescribeOptimizeAdviceOnBigTableRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class DescribeOptimizeAdviceOnBigTableRequest extends RpcAcsRequest
 {
     public function __construct()
     {

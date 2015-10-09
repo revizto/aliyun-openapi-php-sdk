@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class BatchGrantAccountPrivilegeRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class BatchGrantAccountPrivilegeRequest extends RpcAcsRequest
 {
     public function __construct()
     {

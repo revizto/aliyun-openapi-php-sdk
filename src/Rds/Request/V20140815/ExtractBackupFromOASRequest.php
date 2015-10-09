@@ -19,7 +19,9 @@
  */
 namespace Aliyun\Rds\Request\V20140815;
 
-class ExtractBackupFromOASRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ExtractBackupFromOASRequest extends RpcAcsRequest
 {
     public function __construct()
     {

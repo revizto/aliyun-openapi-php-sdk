@@ -19,6 +19,8 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
+use Aliyun\Core\RpcAcsRequest;
+
 class DescribeRegionsRequest extends RpcAcsRequest
 {
     public function __construct()

@@ -19,7 +19,9 @@
  */
 namespace  Aliyun\Ecs\Request\V20140526;
 
-class ModifyImageShareGroupPermissionRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+
+class ModifyImageShareGroupPermissionRequest extends RpcAcsRequest
 {
     public function __construct()
     {
