@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Ubsms_inner\Request\V20150623;
+namespace Aliyun\UbsmsInner\Request\V20150623;
 
 class DescribeUserBusinessStatusRequest extends \RpcAcsRequest
 {
