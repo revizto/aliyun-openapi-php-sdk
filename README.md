@@ -11,7 +11,7 @@
 ## install
 
 ```
-composer require aliyun/openapi-php-sdk 'dev-master'
+composer require aliyun/openapi-php-sdk
 ```
 
 ## Example
