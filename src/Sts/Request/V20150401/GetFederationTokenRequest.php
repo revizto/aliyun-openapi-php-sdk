@@ -38,6 +38,10 @@ class GetFederationTokenRequest extends RpcAcsRequest
 
     private $durationSeconds;
 
+    private  $roleArn;
+
+    private  $roleSessionName;
+    
     public function getStsVersion()
     {
         return $this->stsVersion;
@@ -81,4 +85,22 @@ class GetFederationTokenRequest extends RpcAcsRequest
         $this->durationSeconds = $durationSeconds;
         $this->queryParameters["DurationSeconds"] = $durationSeconds;
     }
+    
+	public function getRoleArn() {
+		return $this->roleArn;
+	}
+
+	public function setRoleArn($roleArn) {
+		$this->roleArn = $roleArn;
+		$this->queryParameters["RoleArn"]=$roleArn;
+	}
+
+	public function getRoleSessionName() {
+		return $this->roleSessionName;
+	}
+
+	public function setRoleSessionName($roleSessionName) {
+		$this->roleSessionName = $roleSessionName;
+		$this->queryParameters["RoleSessionName"]=$roleSessionName;
+	}
 }
